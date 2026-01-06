@@ -1,4 +1,3 @@
-import pandas
 
 print('Olá Mundo!')
 
