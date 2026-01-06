@@ -1,0 +1,29 @@
+name: veryficação codigo
+
+on: 
+  push: 
+    branches: 
+      - main
+      
+
+jobs: 
+  ruff:
+    runs-on: ubuntu-latest
+    
+    steps: 
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: python
+        uses: actions/setup-python@v4
+        with: 
+          python-version: "3.x"
+
+      - name: ruff
+        run: |
+        python -m pip install --upgrade pip 
+        pip install ruff
+
+      - name: verivication
+        run: ruff check .
+
