@@ -21,8 +21,8 @@ jobs:
 
       - name: ruff
         run: |
-        python -m pip install --upgrade pip 
-        pip install ruff
+          python -m pip install --upgrade pip
+          pip install ruff
 
       - name: verivication
         run: ruff check .
