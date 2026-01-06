@@ -1,4 +1,4 @@
-from pandas import *
+import pandas
 
 print('Olá Mundo!')
 
